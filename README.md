@@ -1,0 +1,2 @@
+# Aruyan
+Aruyan-English dictionary
