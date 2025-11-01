@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aruyan Dictionary</title>
+<style>
+body {
+  font-family: "Noto Sans", sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  color: #222;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+input {
+  font-size: 1.1em;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.result {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.word {
+  font-size: 1.8em;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-weight: 500;
+  text-align: left;
+  direction: rtl;
+  margin-bottom: 4px;
+}
+.latin, .ipa {
+  display: block;
+  color: #555;
+}
+.pos {
+  font-weight: bold;
+  margin-top: 5px;
+}
+.translation {
+  color: #006400;
+  margin-top: 5px;
+}
+.section {
+  margin-top: 8px;
+}
+.section-title {
+  font-weight: bold;
+  color: #444;
+  margin-top: 8px;
+}
+.form-row {
+  margin-left: 15px;
+  color: #333;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-weight: 500;
+}
+.no-results {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
+.toggle {
+  text-align: center;
+  margin: 10px 0;
+}
+button {
+  font-size: 1em;
+  padding: 8px 15px;
+  border: none;
+  background-color: #0078d7;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #005fa3;
+}
+
+.noto-sans-arabic-<uniquifier> {
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<h1>📖 Aruyan Dictionary</h1>
+
+<div class="toggle">
+  <button id="modeBtn">Switch to English → Aruyan</button>
+</div>
+
+<div class="search-container">
+  <input id="search" placeholder="Type word...">
+</div>
+
+<div id="results"></div>
+
+<script>
+let dictionary = [];
+let currentMode = "Aruyan"; // "Aruyan" or "english"
+
+// --- Remove Arabic diacritics (tashkeel) ---
+function normalizeArabic(text) {
+  return text.replace(/[\u0610-\u061A\u064B-\u065F\u06D6-\u06ED]/g, '');
+}
+
+// Load JSON
+fetch('dictionary.json')
+  .then(r => r.json())
+  .then(data => { dictionary = data; });
+
+// Switch mode
+document.getElementById('modeBtn').addEventListener('click', () => {
+  currentMode = (currentMode === "Aruyan") ? "english" : "Aruyan";
+  document.getElementById('modeBtn').textContent =
+    currentMode === "Aruyan"
+      ? "Switch to English → Aruyan"
+      : "Switch to Aruyan → English";
+  document.getElementById('results').innerHTML = '';
+  document.getElementById('search').value = '';
+  document.getElementById('search').placeholder =
+    currentMode === "Aruyan"
+      ? "Type Aruyan word (Arabic or Latin)..."
+      : "Type English word...";
+});
+
+// Handle search
+document.getElementById('search').addEventListener('input', function() {
+  const query = this.value.trim().toLowerCase();
+  const resultsDiv = document.getElementById('results');
+  resultsDiv.innerHTML = '';
+  if (!query) return;
+
+  const isArabic = /[\u0600-\u06FF]/.test(query);
+  const normalizedQuery = isArabic ? normalizeArabic(query) : query;
+
+  let results = [];
+
+  if (currentMode === "Aruyan") {
+    results = dictionary.filter(entry => {
+      if (isArabic) {
+        return normalizeArabic(entry.arabic).includes(normalizedQuery);
+      }
+      return entry.latin.toLowerCase().includes(normalizedQuery);
+    });
+  } else {
+    // English → Aruyan mode
+    results = dictionary.filter(entry =>
+      entry.translation.some(t => t.toLowerCase().includes(normalizedQuery))
+    );
+  }
+
+  if (results.length === 0) {
+    resultsDiv.innerHTML = '<div class="no-results">No results found.</div>';
+    return;
+  }
+
+  results.forEach(entry => {
+    const div = document.createElement('div');
+    div.className = 'result';
+    let html = `
+      <div class="word">${entry.arabic}</div>
+      <div class="latin">${entry.latin}</div>
+      <div class="ipa">${entry.IPA}</div>
+      <div class="pos">${entry.POS}${entry.class ? ' — ' + entry.class : ''}</div>
+      <div class="translation">${entry.translation.join(', ')}</div>
+    `;
+
+    // Declension / Conjugation
+    let forms = [];
+    if (entry.declension) {
+      html += `<div class="section-title">Declension:</div>`;
+      for (const [key, value] of Object.entries(entry.declension)) {
+        if (value && value.trim() !== '') {
+          forms.push(`<div class="form-row">${key}: ${value}</div>`);
+        }
+      }
+    }
+    if (entry.conjugation) {
+      html += `<div class="section-title">Conjugation:</div>`;
+      for (const [key, value] of Object.entries(entry.conjugation)) {
+        if (value && value.trim() !== '') {
+          forms.push(`<div class="form-row">${key}: ${value}</div>`);
+        }
+      }
+    }
+    html += forms.join('');
+    div.innerHTML = html;
+    resultsDiv.appendChild(div);
+  });
+});
+</script>
+
+</body>
+</html>
