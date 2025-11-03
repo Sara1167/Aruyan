@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Aruyan Dictionary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {
   font-family: "Noto Sans", sans-serif;
   max-width: 700px;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 20px;
   background: #f9f9f9;
   color: #222;
@@ -20,7 +21,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 input {
   font-size: 1.1em;
@@ -38,7 +39,7 @@ input {
 }
 .word {
   font-size: 1.8em;
-  font-family: "Noto Sans Arabic", sans-serif;
+  font-family: "Noto Sans Arabic", "Noto Naskh Arabic", serif;
   font-weight: 500;
   text-align: left;
   direction: rtl;
@@ -56,9 +57,6 @@ input {
   color: #006400;
   margin-top: 5px;
 }
-.section {
-  margin-top: 8px;
-}
 .section-title {
   font-weight: bold;
   color: #444;
@@ -67,7 +65,7 @@ input {
 .form-row {
   margin-left: 15px;
   color: #333;
-  font-family: "Noto Sans Arabic", sans-serif;
+  font-family: "Noto Sans Arabic", "Noto Naskh Arabic", serif;
   font-weight: 500;
 }
 .no-results {
@@ -92,66 +90,25 @@ button:hover {
   background-color: #005fa3;
 }
 
-.noto-sans-arabic-<uniquifier> {
-  font-family: "Noto Sans Arabic", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-.form-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin: 4px 0;
-  direction: ltr; /* so the label stays left-to-right */
-}
-
-.form-row .label {
-  direction: ltr;
-  unicode-bidi: isolate;
-  font-weight: 600;
-  color: #444;
-  margin-right: 8px;
-}
-
-.form-row .arabic-form {
-  direction: rtl;
-  unicode-bidi: embed;
-  font-family: "Noto Sans Arabic", "Noto Naskh Arabic", "Scheherazade New", serif;
-  font-weight: 500;
-}
-
-
+/* Mobile adjustments */
 @media (max-width: 500px) {
   body {
     padding: 10px;
   }
-
-  .container {
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: none;
-  }
-
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  input[type="text"] {
+  input {
     font-size: 1rem;
-    padding: 10px;
-	
-	
+    padding: 8px;
+  }
+  .result {
+    padding: 12px;
+  }
+  .word {
+    font-size: 1.5em;
   }
 }
-
 </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -172,19 +129,18 @@ button:hover {
 </div>
 
 <div id="results"></div>
-
 <div id="wordCount" style="text-align:center; color:#555; margin-top:10px;"></div>
 
 <script>
 let dictionary = [];
 let currentMode = "Aruyan"; // "Aruyan" or "english"
 
-// --- Remove Arabic diacritics (tashkeel) ---
+// Remove Arabic diacritics (tashkeel)
 function normalizeArabic(text) {
   return text.replace(/[\u0610-\u061A\u064B-\u065F\u06D6-\u06ED]/g, '');
 }
 
-// --- Load JSON and sort alphabetically ---
+// Load JSON and sort alphabetically
 fetch('dictionary.json')
   .then(r => r.json())
   .then(data => {
@@ -192,9 +148,10 @@ fetch('dictionary.json')
     dictionary.sort((a, b) => a.latin.localeCompare(b.latin));
     document.getElementById('wordCount').textContent =
       `Total words in dictionary: ${dictionary.length}`;
-  });
+  })
+  .catch(err => console.error('Failed to load dictionary.json:', err));
 
-// --- Switch mode (Aruyan ↔ English) ---
+// Switch mode button
 document.getElementById('modeBtn').addEventListener('click', () => {
   currentMode = (currentMode === "Aruyan") ? "english" : "Aruyan";
   document.getElementById('modeBtn').textContent =
@@ -211,7 +168,7 @@ document.getElementById('modeBtn').addEventListener('click', () => {
     `Total words in dictionary: ${dictionary.length}`;
 });
 
-// --- Handle search input (starts-with + count) ---
+// Handle search input
 document.getElementById('search').addEventListener('input', function() {
   const queryRaw = this.value.trim();
   const query = queryRaw.toLowerCase();
@@ -220,7 +177,6 @@ document.getElementById('search').addEventListener('input', function() {
   resultsDiv.innerHTML = '';
   wordCountDiv.textContent = '';
 
-  // If search is empty → show total word count
   if (!query) {
     wordCountDiv.textContent = `Total words in dictionary: ${dictionary.length}`;
     return;
@@ -264,18 +220,12 @@ document.getElementById('search').addEventListener('input', function() {
       <div class="translation">${entry.translation.join(', ')}</div>
     `;
 
-    // Declension / Conjugation forms
-    let forms = [];
+    // Declension / Conjugation
     if (entry.declension) {
       html += `<div class="section-title">Declension:</div>`;
       for (const [key, value] of Object.entries(entry.declension)) {
         if (value && value.trim() !== '') {
-          forms.push(`
-  <div class="form-row">
-    <span class="label">${key}:</span>
-    <span class="arabic-form" dir="rtl">${value}</span>
-  </div>
-`);
+          html += `<div class="form-row">${key}: ${value}</div>`;
         }
       }
     }
@@ -283,17 +233,15 @@ document.getElementById('search').addEventListener('input', function() {
       html += `<div class="section-title">Conjugation:</div>`;
       for (const [key, value] of Object.entries(entry.conjugation)) {
         if (value && value.trim() !== '') {
-          forms.push(`<div class="form-row">${key}: ${value}</div>`);
+          html += `<div class="form-row">${key}: ${value}</div>`;
         }
       }
     }
 
-    html += forms.join('');
     div.innerHTML = html;
     resultsDiv.appendChild(div);
   });
 
-  // Show count of results + total words
   wordCountDiv.textContent =
     `${results.length} word${results.length !== 1 ? 's' : ''} found (total ${dictionary.length})`;
 });
