@@ -1,0 +1,1046 @@
+[
+  {
+    "latin": "nabya",
+    "arabic": "ناپة",
+    "IPA": "[ˈnabʲa]",
+    "POS": "noun",
+    "translation": [
+      "female cat"
+    ],
+    "declension": {
+      "compound": "ناپة",
+      "plural": "وَناپة"
+    }
+  },
+  {
+    "latin": "fusi",
+    "arabic": "فوسِ",
+    "IPA": "[ˈfusi]",
+    "POS": "noun",
+    "translation": [
+      "male cat"
+    ],
+    "declension": {
+      "compound": "فوسِ",
+      "plural": "وَفوسِ"
+    }
+  },
+  {
+    "latin": "lari",
+    "arabic": "لارِ",
+    "IPA": "[ˈlaɾi]",
+    "POS": "verb",
+    "translation": [
+      "run"
+    ],
+    "conjugation": {
+      "act. simple": "لارِ",
+      "act. continous": "لٗمارِ",
+      "pass. simple": "لىرِ",
+      "pass. continous": "لِنارِ"
+    }
+  },
+  {
+    "latin": "ruma",
+    "arabic": "رومة",
+    "IPA": "[ˈɾuma]",
+    "POS": "noun",
+    "translation": [
+      "house",
+      "home",
+      "apartment",
+      "abode",
+      "family",
+      "dynasty"
+    ],
+    "declension": {
+      "compound": "روم",
+      "plural": "رُمرومة"
+    }
+  },
+  {
+    "latin": "kita",
+    "arabic": "كيتا",
+    "IPA": "[ˈkita]",
+    "POS": "pronoun",
+    "translation": [
+      "1. person plural inclusive pronoun",
+      "We"
+    ],
+    "conjugation": {
+      "possesive": "يتا"
+    }
+  },
+  {
+    "latin": "ay",
+    "arabic": "آئ",
+    "IPA": "[aj]",
+    "POS": "noun",
+    "translation": [
+      "water",
+      "juice",
+      "liquid",
+      "fluid"
+    ],
+    "declension": {
+      "compound": "وآئ"
+    }
+  },
+  {
+    "latin": "ri",
+    "arabic": "ري",
+    "IPA": "[ɾi]",
+    "POS": "noun",
+    "translation": [
+      "sun",
+      "day",
+      "sunlight"
+    ],
+    "declension": {
+      "compound": "ري",
+      "plural": "وَري"
+    }
+  },
+  {
+    "latin": "nyawa",
+    "arabic": "ڠاوة‎",
+    "IPA": "[ˈŋawa]",
+    "POS": "noun",
+    "translation": [
+      "name",
+      "first name"
+    ],
+    "declension": {
+      "compound": "ڠاوة",
+      "plural": "وَڠاوة"
+    }
+  },
+  {
+    "latin": "tarin",
+    "arabic": "طارِن",
+    "IPA": "[ˈtaɾin]",
+    "POS": "noun",
+    "translation": [
+      "human",
+      "person",
+      "man"
+    ],
+    "declension": {
+      "compound": "طا",
+      "plural": "طاطا"
+    }
+  },
+  {
+    "latin": "dawa",
+    "arabic": "دَواء",
+    "IPA": "[ˈdawa]",
+    "POS": "noun",
+    "translation": [
+      "cure",
+      "medicine",
+      "remedy"
+    ],
+    "declension": {
+      "compound": "دَواء",
+      "plural": "وَدَواء"
+    }
+  },
+  {
+    "latin": "nya",
+    "arabic": "ڠا",
+    "IPA": "[ˈŋa]",
+    "POS": "verb",
+    "translation": [
+      "say",
+      "utter",
+      "tell"
+    ],
+    "conjugation": {
+      "act. simple": "ڠا",
+      "act. continous": "ڠُما",
+      "pass. simple": "ڠىؤ",
+      "pass. continous": "ڠِنے"
+    }
+  },
+  {
+    "latin": "rami",
+    "arabic": "رامِ",
+    "IPA": "[ˈɾami]",
+    "POS": "adjective",
+    "translation": [
+      "cold",
+      "soothing",
+      "comforting",
+      "cool"
+    ],
+    "conjugation": {
+      "basic form": "رامِ",
+      "adverb": "رامِز",
+      "comparative": "رامِنے",
+      "superlative": "رامِندا"
+    }
+  },
+  {
+    "latin": "hami",
+    "arabic": "هَمي",
+    "IPA": "[haˈmi]",
+    "POS": "adjective",
+    "translation": [
+      "sweet",
+      "pleasant",
+      "cute",
+      "bland"
+    ],
+    "conjugation": {
+      "basic form": "هَمي",
+      "adverb": "هَميز",
+      "comparative": "هَمينے",
+      "superlative": "هَميندا"
+    }
+  },
+  {
+    "latin": "neme",
+    "arabic": "نىمے",
+    "IPA": "[ˈnemə]",
+    "POS": "verb",
+    "translation": [
+      "think",
+      "ponder"
+    ],
+    "conjugation": {
+      "act. simple": "نىمے",
+      "act. continous": "نُمىمے",
+      "pass. simple": "نومے",
+      "pass. continous": "نِنومے"
+    }
+  },
+  {
+    "latin": "laran",
+    "arabic": "لارَن",
+    "IPA": "[ˈlaɾan]",
+    "POS": "verb",
+    "translation": [
+      "forbid",
+      "prohibit"
+    ],
+    "conjugation": {
+      "act. simple": "لارَن",
+      "act. continous": "لُمارَن",
+      "pass. simple": "لىرَن",
+      "pass. continous": "لِنىرَن"
+    }
+  },
+  {
+    "latin": "hor",
+    "arabic": "هور",
+    "IPA": "[huɾ] or [hoɾ]",
+    "POS": "noun",
+    "translation": [
+      "heart",
+      "conscience",
+      "core",
+      "soul"
+    ],
+    "conjugation": {
+      "compound": "هُر",
+      "plural": "وَهور"
+    }
+  },
+  {
+    "latin": "kane",
+    "arabic": "كانے",
+    "IPA": "[ˈkanə]",
+    "POS": "verb",
+    "translation": [
+      "eat",
+      "consume"
+    ],
+    "conjugation": {
+      "act. simple": "كانے",
+      "act. continous": "كُمانے",
+      "pass. simple": "كانَ",
+      "pass. continous": "كِنانَ"
+    }
+  },
+  {
+    "latin": "minu",
+    "arabic": "مينُ",
+    "IPA": "[ˈmino]",
+    "POS": "verb",
+    "translation": [
+      "drink",
+      "take medicine"
+    ],
+    "conjugation": {
+      "act. simple": "مينُ",
+      "act. continous": "مُمينُ",
+      "pass. simple": "مانُّ",
+      "pass. continous": "مِنانُّ"
+    }
+  },
+  {
+    "latin": "kiri",
+    "arabic": "كيرِ",
+    "IPA": "[ˈkiɾi]",
+    "POS": "verb",
+    "translation": [
+      "write",
+      "carve",
+      "engrave"
+    ],
+    "conjugation": {
+      "act. simple": "كيرِ",
+      "act. continous": "كُميرِ",
+      "pass. simple": "كانرِ",
+      "pass. continous": "مِنانُّ"
+    }
+  },
+  {
+    "latin": "ku",
+    "arabic": "كو",
+    "IPA": "[ku] or [ko]",
+    "POS": "pronoun",
+    "translation": [
+      "1. person sin. pronoun",
+      "I"
+    ],
+    "conjugation": {
+      "possesive": "كو"
+    }
+  },
+  {
+    "latin": "kas",
+    "arabic": "كاز",
+    "IPA": "[kaz]",
+    "POS": "pronoun",
+    "translation": [
+      "2. person sin. pronoun",
+      "You"
+    ],
+    "conjugation": {
+      "possesive": "سو"
+    }
+  },
+  {
+    "latin": "ya",
+    "arabic": "يا",
+    "IPA": "[ja]",
+    "POS": "pronoun",
+    "translation": [
+      "3. person sin. pronoun",
+      "He",
+      "She",
+      "It"
+    ],
+    "conjugation": {
+      "possesive": "يا"
+    }
+  },
+  {
+    "latin": "kami",
+    "arabic": "كامي",
+    "IPA": "[ˈkami]",
+    "POS": "pronoun",
+    "translation": [
+      "1. person plural exclusive pronoun",
+      "We"
+    ],
+    "conjugation": {
+      "possesive": "مىئ"
+    }
+  },
+  {
+    "latin": "kamu",
+    "arabic": "كامُ",
+    "IPA": "[ˈkamo]",
+    "POS": "pronoun",
+    "translation": [
+      "2. person plural pronoun",
+      "You"
+    ],
+    "conjugation": {
+      "possesive": "مو"
+    }
+  },
+  {
+    "latin": "yada",
+    "arabic": "يادَ",
+    "IPA": "[ˈjaða]",
+    "POS": "pronoun",
+    "translation": [
+      "3. person plural pronoun",
+      "They"
+    ],
+    "conjugation": {
+      "possesive": "يادَ"
+    }
+  },
+  {
+    "latin": "ari",
+    "arabic": "آرِ",
+    "IPA": "[ˈaɾi]",
+    "POS": "adverb",
+    "translation": [
+      "today",
+      "this day"
+    ]
+  },
+  {
+    "latin": "tay",
+    "arabic": "تائ",
+    "IPA": "[taj]",
+    "POS": "noun",
+    "translation": [
+      "sea",
+      "ocean"
+    ],
+    "declension": {
+      "compound": "تائ",
+      "plural": "وَتائ"
+    }
+  },
+  {
+    "latin": "bi",
+    "arabic": "بي",
+    "IPA": "[bi]",
+    "POS": "preposition",
+    "translation": [
+      "with",
+      "together with",
+      "using"
+    ],
+    "declension": {
+      "normal": "بي",
+      "indefinite": "بين",
+      "definite": "بيل"
+    }
+  },
+  {
+    "latin": "nab",
+    "arabic": "ناب",
+    "IPA": "[nab]",
+    "POS": "noun",
+    "translation": [
+      "luck",
+      "happiness",
+      "success"
+    ],
+    "declension": {
+      "compound": "ناب",
+      "plural": "-"
+    }
+  },
+  {
+    "latin": "layu",
+    "arabic": "لايُ",
+    "IPA": "[ˈlajo]",
+    "POS": "verb",
+    "translation": [
+      "wither",
+      "lose beauty",
+      "worsen"
+    ],
+    "conjugation": {
+      "act. simple": "لايُ",
+      "act. continous": "لُمايُ",
+      "pass. simple": "-",
+      "pass. continous": "-"
+    }
+  },
+  {
+    "latin": "byu",
+    "arabic": "پو",
+    "IPA": "[bʲu]",
+    "POS": "noun",
+    "translation": [
+      "word",
+      "command",
+      "promise"
+    ],
+    "declension": {
+      "compound": "پو",
+      "plural": "وَپو"
+    }
+  },
+  {
+    "latin": "bafi",
+    "arabic": "بافِ",
+    "IPA": "[ˈbafi]",
+    "POS": "noun",
+    "translation": [
+      "woman",
+      "girl",
+      "female"
+    ],
+    "declension": {
+      "compound": "في",
+      "plural": "بىفِ"
+    }
+  },
+  {
+    "latin": "mata",
+    "arabic": "ماتة",
+    "IPA": "[ˈmata]",
+    "POS": "noun",
+    "translation": [
+      "eye"
+    ],
+    "declension": {
+      "compound": "ماتة",
+      "plural": "مَتي"
+    }
+  },
+  {
+    "latin": "rusa",
+    "arabic": "رُسا",
+    "IPA": "[ɾoˈza]",
+    "POS": "noun",
+    "translation": [
+      "deer",
+      "doe"
+    ],
+    "declension": {
+      "compound": "رُسا",
+      "plural": "رُسرُسا"
+    }
+  },
+  {
+    "latin": "lima",
+    "arabic": "ليمة",
+    "IPA": "[ˈlima]",
+    "POS": "noun",
+    "translation": [
+      "hand",
+      "arm"
+    ],
+    "declension": {
+      "compound": "ليم",
+      "plural": "ليمي"
+    }
+  },
+  {
+    "latin": "ja",
+    "arabic": "جا",
+    "IPA": "[d͡ʒa]",
+    "POS": "verb",
+    "translation": [
+      "know",
+      "realize"
+    ],
+    "conjugation": {
+      "act. simple": "جا",
+      "act. continous": "جُما",
+      "pass. simple": "جون",
+      "pass. continous": "جِنون"
+    }
+  },
+  {
+    "latin": "kafi",
+    "arabic": "كافِ",
+    "IPA": "[ˈkafi]",
+    "POS": "adjective",
+    "translation": [
+      "pious",
+      "devout",
+      "godly",
+      "righteous",
+      "virtuous",
+      ""
+    ],
+    "declension": {
+      "normal": "كافِ",
+      "adverbial": "كافِز",
+      "comparative": "كافِنے",
+      "superlative": "كافِندا"
+    }
+  },
+  {
+    "latin": "shey",
+    "arabic": "شىئ",
+    "IPA": "[ʃej]",
+    "POS": "noun",
+    "translation": [
+      "soul",
+      "spirit"
+    ],
+    "declension": {
+      "compound": "شىئ",
+      "plural": "وَشىئ"
+    }
+  },
+  {
+    "latin": "ghol",
+    "arabic": "غُل",
+    "IPA": "[ɣol] or [ɣul]",
+    "POS": "noun",
+    "translation": [
+      "bread",
+      "roll",
+      "loaf",
+      "bun"
+    ],
+    "declension": {
+      "compound": "غُل",
+      "plural": "وَغُل"
+    }
+  },
+  {
+    "latin": "babu",
+    "arabic": "بابُ",
+    "IPA": "[ˈbabo]",
+    "POS": "noun",
+    "translation": [
+      "pig",
+      "swine"
+    ],
+    "declension": {
+      "compound": "بابُ",
+      "plural": "بَبابُ"
+    }
+  },
+  {
+    "latin": "buku",
+    "arabic": "بُكو",
+    "IPA": "[boˈku]",
+    "POS": "noun",
+    "translation": [
+      "knot",
+      "node",
+      "knuckle"
+    ],
+    "declension": {
+      "compound": "بُكو",
+      "plural": "وَبُكو"
+    }
+  },
+  {
+    "latin": "mate",
+    "arabic": "ماتے",
+    "IPA": "[ˈmatə]",
+    "POS": "verb",
+    "translation": [
+      "die",
+      "perish",
+      "pass away"
+    ],
+    "conjugation": {
+      "act. simple": "ماتے",
+      "act. continous": "مُماتے",
+      "pass. simple": "ميتے",
+      "pass. continous": "مِنيتے"
+    }
+  },
+  {
+    "latin": "ru'a",
+    "arabic": "روءَ",
+    "IPA": "[ˈɾuʔa]",
+    "POS": "verb",
+    "translation": [
+      "live"
+    ],
+    "conjugation": {
+      "act. simple": "رو",
+      "act. continous": "رُمو",
+      "pass. simple": "-",
+      "pass. continous": "-"
+    }
+  },
+  {
+    "latin": "la",
+    "arabic": "لا",
+    "IPA": "[la]",
+    "POS": "verb",
+    "translation": [
+      "hold",
+      "keep",
+      "follow",
+      "maintain",
+      "continue"
+    ],
+    "conjugation": {
+      "act. simple": "لا",
+      "act. continous": "لومَّ",
+      "pass. simple": "لُؤ",
+      "pass. continous": "لِنا"
+    }
+  },
+  {
+    "latin": "kemi",
+    "arabic": "كْمي",
+    "IPA": "[ˈkemi]",
+    "POS": "verb",
+    "translation": [
+      "do",
+      "make",
+      "work"
+    ],
+    "conjugation": {
+      "act. simple": "كى",
+      "act. continous": "كومِ",
+      "pass. simple": "كين",
+      "pass. continous": "كِني"
+    }
+  },
+  {
+    "latin": "tidur",
+    "arabic": "طِدور",
+    "IPA": "[tiˈðuɾ]",
+    "POS": "verb",
+    "translation": [
+      "sleep"
+    ],
+    "conjugation": {
+      "act. simple": "طِدور",
+      "act. continous": "طُمِدور",
+      "pass. simple": "طَندور",
+      "pass. continous": "طِنَدور"
+    }
+  },
+  {
+    "latin": "sakari",
+    "arabic": "سَكَري",
+    "IPA": "[zakaˈɾi]",
+    "POS": "verb",
+    "translation": [
+      "pledge allegiance",
+      "swear loyalty"
+    ],
+    "conjugation": {
+      "act. simple": "سكَري",
+      "act. continous": "سُمكَري",
+      "pass. simple": "-",
+      "pass. continous": "-"
+    }
+  },
+  {
+    "latin": "lani",
+    "arabic": "لاڠِ",
+    "IPA": "[ˈlaɲi]",
+    "POS": "noun",
+    "translation": [
+      "sky",
+      "heaven"
+    ],
+    "declension": {
+      "compound": "لاڠِ",
+      "plural": "لَلاڠِ"
+    }
+  },
+  {
+    "latin": "ifun",
+    "arabic": "إفُن",
+    "IPA": "[ˈifon]",
+    "POS": "noun",
+    "translation": [
+      "tooth"
+    ],
+    "declension": {
+      "compound": "فُن",
+      "plural": "فىن"
+    }
+  },
+  {
+    "latin": "anak",
+    "arabic": "آنَک",
+    "IPA": "[ˈanax] or [ˈanak]",
+    "POS": "noun",
+    "translation": [
+      "child",
+      "kid",
+      "offspring"
+    ],
+    "declension": {
+      "compound": "نَک",
+      "plural": "نَناک"
+    }
+  },
+  {
+    "latin": "tan",
+    "arabic": "تان",
+    "IPA": "[tan]",
+    "POS": "noun",
+    "translation": [
+      "book",
+      "inscription",
+      "scroll",
+      "manuscript"
+    ],
+    "declension": {
+      "compound": "تان",
+      "plural": "وَتان"
+    }
+  },
+  {
+    "latin": "benar",
+    "arabic": "بْنار",
+    "IPA": "[bəˈnaɾ]",
+    "POS": "adjective",
+    "translation": [
+      "true",
+      "genuine",
+      "real",
+      "valid",
+      "honest"
+    ],
+    "declension": {
+      "normal": "بْنار",
+      "adverbial": "بْنارِز",
+      "comparative": "بْنارنے",
+      "superlative": "بْنارِندا"
+    }
+  },
+  {
+    "latin": "beli",
+    "arabic": "بىلِ",
+    "IPA": "[ˈbeli]",
+    "POS": "verb",
+    "translation": [
+      "buy",
+      "pucharse"
+    ],
+    "conjugation": {
+      "act. simple": "بىلِ",
+      "act. continous": "بُمىلِ",
+      "pass. simple": "بائلِ",
+      "pass. continous": "بِنائلِ"
+    }
+  },
+  {
+    "latin": "bay",
+    "arabic": "بائ",
+    "IPA": "[baj]",
+    "POS": "noun",
+    "translation": [
+      "trade",
+      "business"
+    ],
+    "declension": {
+      "compound": "بائ",
+      "plural": "وَبائ"
+    }
+  },
+  {
+    "latin": "bonye",
+    "arabic": "بُڠى‎",
+    "IPA": "[boˈɲe]",
+    "POS": "adjective",
+    "translation": [
+      "deaf"
+    ],
+    "declension": {
+      "normal": "بُڠى",
+      "adverbial": "بُڠىز",
+      "comparative": "بُڠىنے",
+      "superlative": "بُڠىندا"
+    }
+  },
+  {
+    "latin": "buta",
+    "arabic": "بوتَ",
+    "IPA": "[ˈbuta]",
+    "POS": "adjective",
+    "translation": [
+      "blind",
+      "blinded"
+    ],
+    "declension": {
+      "normal": "بوتَ",
+      "adverbial": "بوتَز",
+      "comparative": "بوتَنے",
+      "superlative": "بوتَنَندا"
+    }
+  },
+  {
+    "latin": "bebe",
+    "arabic": "ببے",
+    "IPA": "[ˈbebə] or [ˈbəbə]",
+    "POS": "noun",
+    "translation": [
+      "mouth"
+    ],
+    "declension": {
+      "compound": "ببے",
+      "plural": "ببے"
+    }
+  },
+  {
+    "latin": "tukyur",
+    "arabic": "توقُر",
+    "IPA": "[ˈtukʲoɾ] ",
+    "POS": "adjective",
+    "translation": [
+      "dry"
+    ],
+    "declension": {
+      "normal": "توقُر",
+      "adverbial": "توقُرِز",
+      "comparative": "توقُرنے",
+      "superlative": "توقُرَندا"
+    }
+  },
+  {
+    "latin": "tufa",
+    "arabic": "توفَ",
+    "IPA": "[ˈtufa] ",
+    "POS": "verb",
+    "translation": [
+      "divide",
+      "separate"
+    ],
+    "conjugation": {
+      "act. simple": "توفَ",
+      "act. continous": "تُموفَ",
+      "pass. simple": "تافَّ",
+      "pass. continous": "تِنافَّ"
+    }
+  },
+  {
+    "latin": "tuk",
+    "arabic": "توک",
+    "IPA": "[tux] or [tuk]",
+    "POS": "verb",
+    "translation": [
+      "hit",
+      "beat",
+      "knock",
+      "strike"
+    ],
+    "conjugation": {
+      "act. simple": "توک",
+      "act. continous": "تُموک",
+      "pass. simple": "تاتُک",
+      "pass. continous": "تِناتُک"
+    }
+  },
+  {
+    "latin": "ata",
+    "arabic": "آتَ",
+    "IPA": "[ˈata] ",
+    "POS": "adjective",
+    "translation": [
+      "tall",
+      "high",
+      "lofty",
+      "great"
+    ],
+    "declension": {
+      "normal": "آتَ",
+      "adverbial": "آتَز",
+      "comparative": "آتَنے",
+      "superlative": "آتَندا"
+    }
+  },
+  {
+    "latin": "infu",
+    "arabic": "إنفو",
+    "IPA": "[ˈinfo] ",
+    "POS": "noun",
+    "translation": [
+      "grandfather",
+      "grandparent"
+    ],
+    "declension": {
+      "compound": "إنفو",
+      "plural": "إنِنفو"
+    }
+  },
+  {
+    "latin": "infi",
+    "arabic": "إنفي",
+    "IPA": "[ˈinfi] ",
+    "POS": "noun",
+    "translation": [
+      "grandmother"
+    ],
+    "declension": {
+      "compound": "إنفي",
+      "plural": "إنِنفي"
+    }
+  },
+  {
+    "latin": "kaka",
+    "arabic": "كاكة",
+    "IPA": "[ˈkaka]",
+    "POS": "noun",
+    "translation": [
+      "older sibling"
+    ],
+    "declension": {
+      "compound": "كاكة",
+      "plural": "كَكاكة"
+    }
+  },
+  {
+    "latin": "waji",
+    "arabic": "واجي",
+    "IPA": "[ˈwad͡ʒi] ",
+    "POS": "noun",
+    "translation": [
+      "younger sibling"
+    ],
+    "declension": {
+      "compound": "واجي",
+      "plural": "وَواجي"
+    }
+  },
+  {
+    "latin": "mura",
+    "arabic": "مورَ",
+    "IPA": "[ˈmuɾa] ",
+    "POS": "preposition",
+    "translation": [
+      "before",
+      "in front of"
+    ],
+    "declension": {
+      "normal": "مورَ",
+      "indefinite": "مورَن",
+      "definite": "مورَل"
+    }
+  },
+  {
+    "latin": "dakyan",
+    "arabic": "دَقان",
+    "IPA": "[daˈkʲan] ",
+    "POS": "noun",
+    "translation": [
+      "twig",
+      "branch"
+    ],
+    "declension": {
+      "compound": "دَقان",
+      "plural": "وَدَقان"
+    }
+  },
+  {
+    "latin": "denir",
+    "arabic": "دْڠ‎ير",
+    "IPA": "[dəˈɲiɾ] ",
+    "POS": "verb",
+    "translation": [
+      "hear",
+      "listen",
+      "obey"
+    ],
+    "conjugation": {
+      "act. simple": "دْڠير",
+      "act. continous": "‎دُمْڠير",
+      "pass. simple": "‎دَڠىر",
+      "pass. continous": "‎دِنَڠىر"
+    }
+  },
+  {
+    "latin": "asu",
+    "arabic": "آسو",
+    "IPA": "[ˈazu] ",
+    "POS": "noun",
+    "translation": [
+      "dog",
+      "hound"
+    ],
+    "declension": {
+      "compound": "آسو",
+      "plural": "آسآسو"
+    }
+  }
+]
