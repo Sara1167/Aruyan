@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Parts of Speech – Aruyan Grammar</title>
+<link rel="stylesheet" href="grammar.css">
+</head>
+<body>
+
+<header class="topbar">
+    <a href="index.html" class="back-btn">⟵ Back to Dictionary</a>
+    <h1>Parts of Speech</h1>
+</header>
+
+<div class="layout">
+
+    <nav class="menu">
+
+        <button class="menu-btn">Verbs</button>
+        <div class="submenu">
+            <a href="#verb-basic">Verb Overview</a>
+            <a href="#verb-conj">Conjugation</a>
+        </div>
+
+        <button class="menu-btn">Nouns</button>
+        <div class="submenu">
+            <a href="#noun-gender">Genders</a>
+            <a href="#noun-decl">Declension</a>
+        </div>
+
+        <button class="menu-btn">Adjectives & Adverbs</button>
+        <div class="submenu">
+            <a href="#adj-forms">Forms</a>
+            <a href="#adv-formation">Formation</a>
+        </div>
+
+        <button class="menu-btn">Numbers</button>
+        <div class="submenu">
+            <a href="#numbers-card">Cardinal</a>
+            <a href="#numbers-ord">Ordinal</a>
+        </div>
+
+        <button class="menu-btn">Particles</button>
+        <div class="submenu">
+            <a href="#particles-list">List</a>
+        </div>
+
+        <button class="menu-btn">Pronouns</button>
+        <div class="submenu">
+            <a href="#pronoun-types">Types</a>
+            <a href="#pronoun-decl">Declension</a>
+        </div>
+
+    </nav>
+
+    <main class="content">
+        <h2>Start by selecting a topic from the menu.</h2>
+    </main>
+
+</div>
+
+<script>
+document.querySelectorAll(".menu-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("open");
+        btn.nextElementSibling.style.display =
+            btn.nextElementSibling.style.display === "block" ? "none" : "block";
+    });
+});
+</script>
+
+</body>
+</html>

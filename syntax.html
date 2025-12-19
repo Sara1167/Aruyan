@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Syntax – Aruyan Grammar</title>
+<link rel="stylesheet" href="grammar.css">
+</head>
+<body>
+
+<header class="topbar">
+    <a href="index.html" class="back-btn">⟵ Back to Dictionary</a>
+    <h1>Syntax</h1>
+</header>
+
+<div class="layout">
+
+    <nav class="menu">
+
+        <button class="menu-btn">Structure of the Clause</button>
+        <div class="submenu">
+            <a href="#clause-basic">Basic Structure</a>
+            <a href="#clause-order">Word Order Variants</a>
+        </div>
+
+        <button class="menu-btn">Compound Sentences</button>
+        <div class="submenu">
+            <a href="#compound-types">Types</a>
+        </div>
+
+        <button class="menu-btn">Relative Pronouns</button>
+        <div class="submenu">
+            <a href="#relative-forms">Forms</a>
+            <a href="#relative-examples">Examples</a>
+        </div>
+
+        <button class="menu-btn">Alignment</button>
+        <div class="submenu">
+            <a href="#alignment-types">Alignment Types</a>
+        </div>
+
+    </nav>
+
+    <main class="content">
+        <h2>Choose a topic to begin.</h2>
+    </main>
+
+</div>
+
+<script>
+document.querySelectorAll(".menu-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("open");
+        btn.nextElementSibling.style.display =
+            btn.nextElementSibling.style.display === "block" ? "none" : "block";
+    });
+});
+</script>
+
+</body>
+</html>
