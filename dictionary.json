@@ -1792,6 +1792,92 @@
       "plural": "آشي"
     }
   },
+{
+    "latin": "be-",
+    "arabic": "بْ",
+    "IPA": "[bə]",
+    "POS": "affix",
+    "translation": [
+      "causative"
+    ]
+  },
+{
+    "latin": "keri-",
+    "arabic": "كْرِ",
+    "IPA": "[bə]",
+    "POS": "affix",
+    "translation": [
+      "prefix indicating similarity"
+      "like"
+      "as"
+    ]
+  },
+{
+    "latin": "nya-",
+    "arabic": "َڠ",
+    "IPA": "[ɲɑ]",
+    "POS": "affix",
+    "translation": [
+      "prefix indicating partership or being in one group"
+      "co-"
+      "same"
+    ]
+  },
+{
+    "latin": "make-",
+    "arabic": "ْمَک",
+    "IPA": "[mɑkə]",
+    "POS": "affix",
+    "translation": [
+      "prefix changing adjectives and verbs to adjectives that indicate being capable of something"
+      "-able"
+      "-ible"
+    ]
+  },
+{
+    "latin": "-fi",
+    "arabic": "في",
+    "IPA": "[fi]",
+    "POS": "affix",
+    "translation": [
+      "Suffix indicating diminutive"
+      "Feminine form"
+    ]
+  },
+{
+    "latin": "-in",
+    "arabic": "عِن",
+    "IPA": "[ɲɑ]",
+    "POS": "affix",
+    "translation": [
+      "Agentive suffix"
+      "-er"
+      "-ian"
+    ]
+  },
+{
+    "latin": "-bar",
+    "arabic": "بَر",
+    "IPA": "[bɑɾ]",
+    "POS": "affix",
+    "translation": [
+      "Agentive suffix"
+      "owner"
+      "bearer"
+      "carrier"
+    ]
+  },
+{
+    "latin": "-rum",
+    "arabic": "رُم",
+    "IPA": "[ɾum]",
+    "POS": "affix",
+    "translation": [
+      "locative suffix indicating place"
+      "place"
+      "house"
+    ]
+  },
   {
     "latin": "balin",
     "arabic": "بَلين",
@@ -2300,4 +2386,5 @@
       "plural": "فايَک"
     }
   }
+
 ]
