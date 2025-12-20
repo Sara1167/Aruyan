@@ -1807,8 +1807,8 @@
     "IPA": "[bə]",
     "POS": "affix",
     "translation": [
-      "prefix indicating similarity"
-      "like"
+      "prefix indicating similarity",
+      "like",
       "as"
     ]
   },
@@ -1818,8 +1818,8 @@
     "IPA": "[ɲɑ]",
     "POS": "affix",
     "translation": [
-      "prefix indicating partership or being in one group"
-      "co-"
+      "prefix indicating partership or being in one group",
+      "co-",
       "same"
     ]
   },
@@ -1829,8 +1829,8 @@
     "IPA": "[mɑkə]",
     "POS": "affix",
     "translation": [
-      "prefix changing adjectives and verbs to adjectives that indicate being capable of something"
-      "-able"
+      "prefix changing adjectives and verbs to adjectives that indicate being capable of something",
+      "-able",
       "-ible"
     ]
   },
@@ -1840,7 +1840,7 @@
     "IPA": "[fi]",
     "POS": "affix",
     "translation": [
-      "Suffix indicating diminutive"
+      "Suffix indicating diminutive",
       "Feminine form"
     ]
   },
@@ -1850,8 +1850,8 @@
     "IPA": "[ɲɑ]",
     "POS": "affix",
     "translation": [
-      "Agentive suffix"
-      "-er"
+      "Agentive suffix",
+      "-er",
       "-ian"
     ]
   },
@@ -1861,9 +1861,9 @@
     "IPA": "[bɑɾ]",
     "POS": "affix",
     "translation": [
-      "Agentive suffix"
-      "owner"
-      "bearer"
+      "Agentive suffix",
+      "owner",
+      "bearer",
       "carrier"
     ]
   },
@@ -1873,8 +1873,8 @@
     "IPA": "[ɾum]",
     "POS": "affix",
     "translation": [
-      "locative suffix indicating place"
-      "place"
+      "locative suffix indicating place",
+      "place",
       "house"
     ]
   },
@@ -2388,3 +2388,4 @@
   }
 
 ]
+
