@@ -10,7 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
   
   <style>
-    /* ===== Reset & Base ===== */
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +18,7 @@
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  letter-spacing: 0.5px;
 }
 
     body {
@@ -28,7 +28,6 @@
 	  font-weight: 400;
     }
 
-    /* ===== Sticky Menu ===== */
     header {
       position: sticky;
       top: 0;
@@ -71,7 +70,6 @@
       text-decoration: underline;
     }
 
-    /* ===== Hero Section ===== */
     .hero {
       text-align: center;
       padding: 60px 20px;
@@ -90,7 +88,6 @@
       margin-bottom: 20px;
     }
 
-    /* ===== Red Buttons ===== */
     .btn-red {
       background-color: #d10000;
       color: #ffffff;
@@ -108,7 +105,6 @@
       background-color: #b00000;
     }
 
-    /* ===== Content Sections ===== */
     section {
       max-width: 1000px;
       margin: 60px auto;
@@ -120,7 +116,6 @@
       margin-bottom: 20px;
     }
 
-    /* ===== Petition Form ===== */
     .petition-form {
       display: flex;
       flex-direction: column;
@@ -142,7 +137,6 @@
       display: none;
     }
 
-    /* ===== Footer ===== */
     footer {
       text-align: center;
       padding: 30px;
@@ -168,7 +162,7 @@
   <div class="hero">
     <img src="1.avif" alt="Petition Image">
     <h2>Stop tyveri af værker til at træne AI!</h2>
-	<b>Støt kunsternes ukrænkelige ret til sin intelektuelle ejendom!</b>
+	<b>Støt kunsternes ukrænkelige ret til sin intellektuelle ejendom!</b>
 	<br></br>
     <button class="btn-red" onclick="scrollToPetition()">Underskriv</button>
   </div>
@@ -189,7 +183,6 @@ Din støtte til disse modeller, og de mennesker, der bruger dem, belønner og yd
 
 </section>
 
-  <!-- ===== Petition ===== -->
   <section id="petition">
     <h3>Underskriv</h3>
     <form class="petition-form" onsubmit="submitPetition(event)">
@@ -202,18 +195,15 @@ Din støtte til disse modeller, og de mennesker, der bruger dem, belønner og yd
     </div>
   </section>
 
-  <!-- ===== Contact ===== -->
   <section id="contact">
     <h3>Kontakt</h3>
     <p>Send os en email på <strong>kontakt@petitions.dk</strong></p>
   </section>
 
-  <!-- ===== Footer ===== -->
   <footer>
     © 2026 Petitions. All rights reserved.
   </footer>
 
-  <!-- ===== JavaScript ===== -->
   <script>
     function scrollToPetition() {
       document.getElementById('petition').scrollIntoView({ behavior: 'smooth' });
@@ -234,3 +224,4 @@ Din støtte til disse modeller, og de mennesker, der bruger dem, belønner og yd
 
 </body>
 </html>
+
